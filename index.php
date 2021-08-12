@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="auto">
 
-            <form action="" method="post">
+            <form action="admin_dashboard.php" method="post">
                 <input type="text" name="uName" class="form-control" placeholder=" *Your User Name" required>
                 <input type="password" name="pWord" class="form-control" placeholder=" *Your Password" id="myInput" required>
                 &nbsp;
@@ -55,7 +56,6 @@
 </div>
 </body>
 </html>
-<?php
 
 
-?>
+

@@ -5,6 +5,7 @@
     <link rel="icon" href="images/logo.jpg">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="js.js"></script>
     <script src="bootstrap/js/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
@@ -20,7 +21,7 @@
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <form action="" method="post">
+            <form action="add_user.php" method="post">
                 <br>
                 <input type="text" name="fName" class="form-control" placeholder="* First Name" required>
                 <br>
@@ -49,4 +50,5 @@
     </div>
 </div>
 </body>
+
 

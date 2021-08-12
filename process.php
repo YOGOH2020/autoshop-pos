@@ -24,15 +24,15 @@ if (isset($_POST['email_check'])) {
 }
 if (isset($_POST['save'])) {
     $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_POST['mail'];
+    $password = $_POST['p_word'];
     $sql = "SELECT * FROM users WHERE username='$username'";
     $results = mysqli_query($db, $sql);
     if (mysqli_num_rows($results) > 0) {
         echo "exists";
         exit();
     }else{
-        $query = "INSERT INTO users (username, email, password) 
+        $query = "INSERT INTO users (username, email, p_word) 
   	       	VALUES ('$username', '$email', '".md5($password)."')";
         $results = mysqli_query($db, $query);
         echo 'Saved!';

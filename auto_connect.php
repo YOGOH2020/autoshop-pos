@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost', 'root', '');
+$db = mysqli_connect('localhost', 'root', '','auto');
 if (!$db){
     die("Database db Failed" . mysqli_error($db));
 }
