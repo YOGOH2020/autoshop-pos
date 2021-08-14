@@ -29,16 +29,17 @@
                 <br>
                 <input type="email" name="mail" class="form-control" placeholder="* Email" required>
                 <br>
+                <input type="number" name="pNumber" class="form-control" placeholder="* Phone Number" required>
+                <br>
                 <input type="text" name="uName" class="form-control" placeholder="* Username" required>
                 <br>
                 <input type="password" name="pWord" class="form-control" placeholder="* Password" required>
                 <br>
-                <input type="number" name="pNumber" class="form-control" placeholder="* Phone Number" required>
-                <br>
-                <select name="sUser"  class="form-control" required>
+                <select name="users"  class="form-control" required>
                     <option value="">Select User</option>
-                    <option value=" Admin"> Admin</option>
-                    <option value="User">User</option>
+                    <option value="Staff">Staff</option>
+                    <option value=" User"> User</option>
+                    <option value="Admin">Admin</option>
                 </select>
                 <div class="buttons">
                     <button class="btn btn-primary" type="submit">Register</button>

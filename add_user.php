@@ -33,8 +33,8 @@
             {
                 die("Connection Failed : " . mysqli_connect_error());
             }
-            $sql="insert into users(first_name,last_name,username,email,p_word,phone_number,user_group)
-values ('$_POST[fName]','$_POST[lName]','$_POST[uName]','$_POST[mail]','$_POST[pWord]','$_POST[pNumber]','$_POST[sUser]')";
+            $sql="insert into user (first_name,last_name,email,phone_number,username,p_word,user_group)
+values ('$_POST[fName]','$_POST[lName]','$_POST[mail]','$_POST[pNumber]','$_POST[uName]','$_POST[pWord]','$_POST[users]')";
 
 
             if($conn->query($sql) == true)
